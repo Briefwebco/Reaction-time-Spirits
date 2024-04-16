@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Време за реакция</title>
+  <link rel="icon" type="image/x-icon" href="/images/icons8-time-48.png">
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    /* Additional CSS styles */
+    body, html {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    #hero {
+      height: 100vh;
+      background-color: #3498db; /* Default background color */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #hero h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    #statusText {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+
+    #startBtn {
+      font-size: 1.5rem;
+    }
+
+    .bottom-section {
+      position: absolute;
+      bottom: 20px;
+    }
+    .bg-light{
+      padding: 50px 0;
+
+    }
+    .smaller-text {
+  font-size: 18px; /* Adjust the font size as needed */
+}
+    .bottom-section h3 {
+      font-size: 1.5rem;
+    }
+    .text-left mb-4{
+      font-size: 2.5rem;
+      font-weight:900;
+    }
+
+    .card {
+      border: 1px solid #e2e8f0; /* Add a border around the cards */
+      border-radius: 8px; /* Add border radius for rounded corners */
+      overflow: hidden; /* Hide overflow to prevent content from sticking out */
+    }
+
+    .card img {
+      width: 100%; /* Make the image fill the entire width of the card */
+      height: auto; /* Maintain aspect ratio */
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+  <Section>
+    <div class="container-fluid p-0">
+    <div id="hero" class="text-white">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center">
+            <h1 class="display-4">Измери своето време за реакция</h1>
+            <div class="mb-4">
+              <h2 id="statusText">Започни играта</h2>
+              <p id="intoxicationWarning" class="d-none text-danger">Внимание: Вие може да сте в нетрезво състояние!</p>
+            </div>
+            <button id="startBtn" class="btn btn-success btn-lg rounded-pill">
+              <i class="fas fa-play mr-2"></i> Старт
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Add the following lines -->
+      <div class="bottom-section">
+        <h3>Logo!</h3>
+      </div>
+    </div>
+  </div>
+</Section>
+  
+<section id="section2" class="bg-light">
+  <div class="container px-4">
+    <div class="row justify-content-center">
+      <div class="col-md-6 mb-4">
+        <div class="card">
+          <div class="p-4">
+            <h2 class="font-weight-bold mb-4">Полезна Информация</h2>
+            <p class="smaller-text"> Според проучване на Станфордския университет добре отпочиналият човек реагира в рамките на 156-250 милисекунди. Но при наличие на алкохол в организма ви това време може да се увеличи до 250-280 милисекунди, подобно на това на човек над 65-годишна възраст. Страшно, а? Алкохолът нарушава мозъчната функция и мускулната координация, което прави шофирането опасно в рамките на няколко минути след употребата му Дори малко количество може значително да забави времето ти за реакция. Знаеш ли, че дори при изпиване на една бира вероятността да катастрофираш е четири пъти по-голяма? Представи си, че наближаваш кръстовище с пешеходна пътека. Когато си трезвен, може да успееш да спреш в рамките на 15 метра, ако внезапно се появи пешеходец. Но при наличие на лакохол в кръвта ти, ще са ти необходими допълнителни 3,75 метра, за да спреш. Това са почти четири метра повече потенциална опасност само поради това, че алкохолът нарушава способностите ти. Но ето и добрата новина: имаш възможност да направиш по-безопасен избор. Не шофирай в нетрезво състояние. Не искате да нараните себе си или другите, нали? Не забравяй, че всяко решение е от значение. Сподели този тест с приятелите си и обещай никога да не шофираш в нетрезво състояние. Нека заедно да запазим пътищата си безопасни!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4">
+        <div class="row">
+          <div class="col-md-12 mb-4">
+            <div class="card">
+              <img src="images/canvas.png" alt="Средностатистическо време за реакция">
+              <div class="p-4">
+                <p class="font-weight-bold mb-2">Средностатистическо време за реакция</p>
+                <p class="small">humanbenchmark.com</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 mb-4">
+            <div class="card">
+              <img src="images/Beers.png" alt="Ефекти от алкохола при шофирането">
+              <div class="p-4">
+                <p class="font-weight-bold mb-2">Ефекти от алкохола при шофирането</p>
+                <p class="small"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container px-4">
+    <div class="row justify-content-center"> <img src="images/logo.png" alt="Logo" style="width: 100px; height: auto;"> <!-- Add Logo here -->
+</section>
+
+  
+
+  
+
+  <!-- Bootstrap JS and custom script -->
+  <script>
+    let startTime, endTime;
+    let testRunning = false;
+    let waitingForSignal = false;
+
+    document.getElementById("startBtn").addEventListener("click", function() {
+      if (testRunning) {
+        endTest();
+      } else {
+        if (waitingForSignal) {
+          resetGame(); // Call resetGame directly if waiting for the signal
+        } else {
+          startTest();
+        }
+      }
+    });
+
+    function startTest() {
+      console.log("startTest function called");
+      if (!testRunning && !waitingForSignal) {
+        document.getElementById("startBtn").innerText = "Изчакай...";
+        document.getElementById("startBtn").disabled = true; // Disable the button
+        document.getElementById("hero").style.backgroundColor = "#e74c3c";
+        document.getElementById("statusText").innerText = "Приготви се....";
+        testRunning = true;
+        waitingForSignal = true;
+        setTimeout(showSignal, Math.random() * 5000 + 1000); // Random delay between 1 to 6 seconds
+      } else if (waitingForSignal) {
+        document.getElementById("statusText").innerText = "Много бързаш. Натисни бутона отново.";
+        setTimeout(resetGame, 2000); // Reset the game after 2 seconds
+      }
+    }
+
+    function showSignal() {
+      console.log("showSignal function called");
+      document.getElementById("hero").style.backgroundColor = "#3498db";
+      document.getElementById("statusText").innerText = "Натисни!";
+      startTime = new Date().getTime();
+      waitingForSignal = false;
+      document.getElementById("startBtn").innerText = "Натисни!";
+      document.getElementById("startBtn").disabled = false; // Enable the button
+    }
+
+    function endTest() {
+      console.log("endTest function called");
+      if (testRunning && !waitingForSignal) {
+        endTime = new Date().getTime();
+        let reactionTime = endTime - startTime; // Time difference in milliseconds
+        document.getElementById("statusText").innerText = "Твоето време за реакция: " + reactionTime + " ms";
+
+        if (reactionTime > 550 && reactionTime <= 650) {
+          document.getElementById("intoxicationWarning").classList.remove("d-none");
+        } else {
+          document.getElementById("intoxicationWarning").classList.add("d-none");
+        }
+
+        testRunning = false;
+        document.getElementById("startBtn").innerText = "Играй отново"; // Change button text to "Play Again"
+      }
+    }
+
+    function resetGame() {
+      console.log("resetGame function called");
+      testRunning = false;
+      waitingForSignal = false;
+      document.getElementById("startBtn").innerText = "Натисни!"; // Reset button text after resetting the game
+      document.getElementById("hero").style.backgroundColor = "#FFC0CB";
+      document.getElementById("statusText").innerText = "Играта се рестартира";
+      document.getElementById("startBtn").disabled = true; // Enable the button
+    }
+  </script>
+</body>
+</html>

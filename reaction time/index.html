@@ -221,7 +221,7 @@ function endTest() {
   if (testRunning && !waitingForSignal) {
     endTime = new Date().getTime();
     let reactionTime = endTime - startTime - 100; // Time difference in milliseconds
-    document.getElementById("display-4").innerText = "Твоето време за реакция: " + reactionTime + " ms" + " Играй отново като кликнеш."; 
+    document.getElementById("display-4").innerText = "Твоето време за реакция: " + reactionTime + " ms" + " Играй отново, като кликнеш."; 
     
     // Show display-42 only at the end screen
     document.getElementById("display-42").style.display = "block";
